@@ -9,7 +9,21 @@ class Strategie(Enum):
 
 
 def play_all(strategie, nb_parties):
-
+    '''Simule une suite de parties du jeu Monty Hall.
+    
+    Cette fonction simule le choix de la porte par le participant, 
+    l'élimination d'une mauvaise porte par le présentateur, et le 
+    choix final. Elle ne retourne que le résultat de la partie, parce 
+    que nous n'aurons besoin que du résultat pour effectuer nos calculs.
+    
+    Args:
+        strategie (Strategie): La stratégie du joueur
+        nb_tours (int): Nombre de tours
+        
+    Returns:
+        bool (ndarray): Tableau des victoires et des pertes pour toutes les parties du joueur
+    '''
+    
     # Portes au choix : porte 0, porte 1 ou porte 2
     portes = np.tile([[0,1,2]], (nb_parties,1))
     
