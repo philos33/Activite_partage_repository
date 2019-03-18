@@ -1,2 +1,2 @@
-# Activite_partage_repository
+# Repository name : github_training
 Repository pour apprentissage de github
